@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vantha</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a81368914c.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="cursor" id="cursor"></div>
+<div id="background-stickers"></div>
+
+<header>
+  <div class="logo-title">
+  <img src="logom.jpg" alt="Dragon Logo" class="dragon-logo">
+  <h1>Vantha</h1>
+</div>
+
+  <nav>
+    <a href="#welcome">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="welcome" class="welcome">
+  <div class="welcome-content">
+    <h1>Pandora's Box</h1>
+    <p>Welcome to my world, I am Jusrylle S.H.</p>
+    <div class="welcome-buttons">
+      <a href="#about">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">My Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="intro">
+  <img src="profile.jpg" alt="Profile Picture">
+  <div class="intro-text">
+    <h2>About Me</h2>
+    <p style="text-align: justify;">Hi, I’m <b>Jusrylle S. Hipolito</b> —a Computer Engineering student driven by craft and charisma. I create things that don’t just work, but feel right. My approach blends precision with mood, logic with visual poetry. I design systems, interfaces, and experiences that look alive — fluid, sharp, and unapologetically stylish. I build with intention: every detail should make sense, and every piece should carry a pulse. </p>
+  </div>
+</section>
+
+<section id="skills" class="skills">
+  <h2>My Skills</h2>
+  <div class="skill-list">
+    <div class="skill-bar"><div class="skill-name">CREATIVITY</div><span style="width:90%"></span></div>
+    <div class="skill-bar"><div class="skill-name">CRITICAL THINKING</div><span style="width:85%"></span></div>
+    <div class="skill-bar"><div class="skill-name">COMMUNICATION</div><span style="width:80%"></span></div>
+    <div class="skill-bar"><div class="skill-name">MECHANICAL</div><span style="width:70%"></span></div>
+    <div class="skill-bar"><div class="skill-name">SOCIAL</div><span style="width:65%"></span></div>
+    <div class="skill-bar"><div class="skill-name">LOGIC</div><span style="width:75%"></span></div>
+  </div>
+</section>
+
+<section id="projects" class="projects">
+  <h2>My Projects</h2>
+  <div class="carousel-container">
+    <div class="carousel">
+  <div class="carousel-item" data-title="Task Inferno" data-desc="A simple To-Do List App to manage tasks with style.">
+    <img src="taskinferno.png" alt="Task Inferno">
+  </div>
+
+  <div class="carousel-item" data-title="CalcPyre" data-desc="A simple Calculator App with clean lava-themed design.">
+    <img src="calcpyre.png" alt="CalcPyre">
+  </div>
+
+  <div class="carousel-item" data-title="Roster Realm" data-desc="Student Details Library to keep everything organized and elegant.">
+    <img src="rosterrealm.png" alt="Roster Realm">
+  </div>
+
+</div>
+
+    <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
+    <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
+  </div>
+  <div class="carousel-description">
+    <h3 id="proj-title">Task Inferno</h3>
+    <p id="proj-desc">A simple To-Do List App to manage tasks with style.</p>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact Me</h2>
+  <div class="socials">
+    <a href="https://web.facebook.com/shjusrylle/" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.instagram.com/v.nthll/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://github.com/Vanthaelle" target="_blank"><i class="fab fa-github"></i></a>
+  </div>
+
+  <div class="qr-codes">
+    <a href="https://web.facebook.com/shjusrylle/" target="_blank">
+    <div>
+      <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://web.facebook.com/shjusrylle/&size=150x150" alt="Facebook QR">
+      <p>Facebook</p>
+    </div>
+  </a>
+  <a href="https://www.instagram.com/v.nthll/" target="_blank">
+    <div>
+      <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://www.instagram.com/v.nthll/&size=150x150" alt="Instagram QR">
+      <p>Instagram</p>
+    </div>
+  </a>
+  <a href="https://github.com/Vanthaelle" target="_blank">
+    <div>
+      <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://github.com/Vanthaelle&size=150x150" alt="GitHub QR">
+      <p>GitHub</p>
+    </div>
+  </a>
+  </div>
+
+  <p style="margin-top:25px; font-size:1em; color:#fbbdc8;">📧 Email: 
+    <a href="mailto:s.h.jusrylle@gmail.com" style="color:#ff4d7b;">s.h.jusrylle@gmail.com</a>
+  </p>
+
+  <form id="contactForm">
+  <input type="text" id="name" placeholder="Your Name" required>
+  <input type="email" id="email" placeholder="Your Email" required>
+  <textarea id="message" rows="4" placeholder="Your Message"></textarea>
+  <button type="submit" class="btn">Send Message</button>
+</form>
+
+</section>
+
+<footer>
+  <p> by Vantha</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
