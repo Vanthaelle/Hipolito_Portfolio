@@ -138,65 +138,69 @@
 </section>
 
 
-<section id="evaluation" class="evaluation">
-  <h2>Portfolio Evaluation</h2>
+  <section class="eval-section">
+  <h2 class="eval-title">Portfolio Evaluation Form</h2>
 
-  <div class="eval-table">
-    <div class="eval-row eval-header">
-      <div>Criteria</div>
-      <div>Description</div>
-      <div>Max Points</div>
-      <div>Score</div>
-    </div>
+  <table class="eval-table">
+    <thead>
+      <tr>
+        <th>Criteria</th>
+        <th>Description</th>
+        <th>Max Points</th>
+        <th>Score</th>
+      </tr>
+    </thead>
 
-    <div class="eval-row">
-      <div>Content Quality</div>
-      <div>Accuracy, depth, storytelling, and relevance of the portfolio.</div>
-      <div>30</div>
-      <div>30</div>
-    </div>
+    <tbody>
+      <tr>
+        <td>Content Quality</td>
+        <td>Accuracy, depth, storytelling, and relevance.</td>
+        <td class="fixed">30</td>
+        <td><input type="number" class="score" max="30" min="0"></td>
+      </tr>
 
-    <div class="eval-row">
-      <div>Design & Layout</div>
-      <div>Typography, spacing, visual hierarchy, and balance.</div>
-      <div>25</div>
-      <div>25</div>
-    </div>
+      <tr>
+        <td>Design & Layout</td>
+        <td>Typography, spacing, visual hierarchy, balance.</td>
+        <td class="fixed">25</td>
+        <td><input type="number" class="score" max="25" min="0"></td>
+      </tr>
 
-    <div class="eval-row">
-      <div>Functionality & Interactivity</div>
-      <div>Working links, transitions, and interactivity features.</div>
-      <div>15</div>
-      <div>15</div>
-    </div>
+      <tr>
+        <td>Functionality & Interactivity</td>
+        <td>Working links, transitions, and interactivity.</td>
+        <td class="fixed">15</td>
+        <td><input type="number" class="score" max="15" min="0"></td>
+      </tr>
 
-    <div class="eval-row">
-      <div>Responsiveness</div>
-      <div>Mobile and tablet compatibility.</div>
-      <div>10</div>
-      <div>10</div>
-    </div>
+      <tr>
+        <td>Responsiveness</td>
+        <td>Mobile and tablet compatibility.</td>
+        <td class="fixed">10</td>
+        <td><input type="number" class="score" max="10" min="0"></td>
+      </tr>
 
-    <div class="eval-row">
-      <div>Portfolio Images & Media</div>
-      <div>Image quality, captions, and alt text completeness.</div>
-      <div>10</div>
-      <div>10</div>
-    </div>
+      <tr>
+        <td>Portfolio Images & Media</td>
+        <td>Image quality, captions, alt text completeness.</td>
+        <td class="fixed">10</td>
+        <td><input type="number" class="score" max="10" min="0"></td>
+      </tr>
 
-    <div class="eval-row">
-      <div>Professionalism & Documentation</div>
-      <div>Process notes, contact information, and presentation.</div>
-      <div>10</div>
-      <div>10</div>
-    </div>
+      <tr>
+        <td>Professionalism & Documentation</td>
+        <td>Process notes, contact info, and presentation.</td>
+        <td class="fixed">10</td>
+        <td><input type="number" class="score" max="10" min="0"></td>
+      </tr>
+    </tbody>
+  </table>
 
-    <div class="eval-total">
-      <p>Total Score: <b>100 / 100</b></p>
-    </div>
+  <div class="eval-total">
+    Total Score: <span id="totalScore">0</span> / 100
   </div>
-</section>
-  
+  </section>
+
   
 <footer>
   <p> by Vantha</p>
@@ -205,6 +209,7 @@
 <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
