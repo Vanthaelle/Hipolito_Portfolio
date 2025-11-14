@@ -1,5 +1,5 @@
 
-// ✦ Entrance animations on scroll ✦
+// Entrance animations on scroll 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -189,4 +189,20 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
   // Open Gmail compose
   window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${mailTo}&su=${subject}&body=${body}`, "_blank");
 });
+
+
+
+  const inputs = document.querySelectorAll(".score");
+  const total = document.getElementById("totalScore");
+
+  function computeTotal() {
+    let sum = 0;
+    inputs.forEach(i => {
+      const value = parseFloat(i.value);
+      if (!isNaN(value)) sum += value;
+    });
+    total.textContent = sum;
+  }
+
+  inputs.forEach(i => i.addEventListener("input", computeTotal));
 
