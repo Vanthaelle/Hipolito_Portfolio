@@ -177,3 +177,67 @@ section{opacity:1;transform:none} /* avoid extra translate on small devices */
   header h1{font-size:1.05rem}
 }
 
+.evaluation {
+  padding: 60px 20px;
+  text-align: center;
+  color: #e0e0ff;
+  position: relative;
+  z-index: 2;
+}
+
+.evaluation h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 2.2em;
+  margin-bottom: 30px;
+  color: #b58dff;
+  text-shadow: 0 0 15px rgba(160, 120, 255, 0.6);
+}
+
+.eval-table {
+  max-width: 900px;
+  margin: auto;
+  background: rgba(255,255,255,0.03);
+  border-radius: 15px;
+  padding: 20px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 20px rgba(140, 100, 255, 0.25);
+}
+
+.eval-row {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr 1fr 1fr;
+  padding: 15px 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  text-align: left;
+}
+
+.eval-header {
+  font-weight: bold;
+  color: #d4c6ff;
+  background: rgba(160, 90, 255, 0.1);
+  border-radius: 8px;
+}
+
+.eval-row:last-child {
+  border-bottom: none;
+}
+
+.eval-total {
+  padding: 20px 0 10px;
+  font-size: 1.2em;
+  color: #cbb8ff;
+  font-weight: bold;
+  text-align: right;
+}
+
+@media (max-width: 700px) {
+  .eval-row {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .eval-row div:nth-child(3),
+  .eval-row div:nth-child(4) {
+    text-align: right;
+  }
+}
